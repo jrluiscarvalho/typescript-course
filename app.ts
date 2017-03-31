@@ -145,9 +145,23 @@ function makeArray(...args: number[]){
 }
 console.log(makeArray(1,2));
 
+//destructuring
+const myHobbies = ["Cooking", "Sports"];
+const [hobbie1, hobbie2] = myHobbies;
+console.log(hobbie1, hobbie2);
+
+const userData2 = {userName: "Max", age:27};
+const {userName: myName2, age: myAge2} = userData2;
+console.log(myName2, myAge2);
 
 
+//template literals
 
+const userName = "Max";
+const greeting = `This is a heading!
+I'm ${userName}.
+This is cool!`;
+console.log(greeting);
 
 
 
