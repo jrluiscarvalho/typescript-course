@@ -102,3 +102,54 @@ let finalValue = 30;
 if(typeof finalValue == "number"){
     console.log("Final value is a number");
 }
+
+//arrow functions
+
+const AddNumbers = function(number1: number, number2: number) : number {
+    return number1 + number2;
+}
+
+console.log(AddNumbers(10, 3));
+
+const multiplyNumbers = (number1: number, number2: number) => number1 * number2;
+console.log(multiplyNumbers(10, 3));
+
+const greet = () => {
+    console.log("Hello!");
+}
+
+greet();
+
+const greetFriend = friend => console.log(friend);
+greetFriend("Mano");
+
+//default paramenters
+
+const countdown = (start: number = 10): void => {
+    console.log(start);
+    while(start > 0){
+        start--;
+    }
+    console.log("Done!", start);
+}
+countdown();
+
+//rest & spread
+
+const numbers = [1, 10, 99, -5];
+console.log(Math.max(33,99,10,-3));
+console.log(Math.max(...numbers));
+
+function makeArray(...args: number[]){
+    return args;
+}
+console.log(makeArray(1,2));
+
+
+
+
+
+
+
+
+
